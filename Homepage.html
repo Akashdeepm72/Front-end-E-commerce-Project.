@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Homepage
+    </title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e4e2dd;
+        }
+
+        .logo img {
+            max-width: 500px;
+            height: auto;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 12px;
+            border: 1px solid #292929;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .search-box input[type="text"] {
+            border: none;
+            padding: 5px;
+        }
+
+        .search-button {
+            border: none;
+            background-color: #e4e2dd;
+            color: #333;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .login-button {
+            border: 1px solid #292929;
+            background-color: #e4e2dd;
+            color: #292929;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .cart-button {
+            font-size: 24px;
+            color: #292929;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #292929;
+        }
+
+        .nav-item a {
+            cursor: pointer;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-part1">
+            <!-- Logo -->
+            <a href="Homepage.html" class="logo">
+                <img src="logo2.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class="search-box">
+            <!-- Search Box -->
+            <input type="text" placeholder="Search...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-part2">
+            <!-- Login Button -->
+            <button class="login-button"><a href="login.html">Login</a></button>
+            <!-- Cart Button -->
+            <a href="cart.html" class="cart-button"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+    <br>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- Navigation Links -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="allproducts.html">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-hover" href="#" id="womenDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Women
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown">
+                            <li><a class="dropdown-item" href="womenall.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="dress.html">Dresses</a></li>
+                            <li><a class="dropdown-item" href="pants.html">Pants</a></li>
+                            <li><a class="dropdown-item" href="saree.html">Sarees</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Men
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown">
+                            <li><a class="dropdown-item" href="mensall.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="shirts.html">Shirts</a></li>
+                            <li><a class="dropdown-item" href="jeans.html">Pants</a></li>
+                            <li><a class="dropdown-item" href="tshirts.html">T-shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kids.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h1>Welcome to Our Online Store</h1>
+        <h4>Explore our wide range of products and find the perfect items for you.</h4>
+    </div>
+</body>
+</html>
